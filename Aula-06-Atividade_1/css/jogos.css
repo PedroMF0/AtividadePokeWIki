@@ -1,0 +1,49 @@
+.bannerMeio {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bannerMeio h2 {
+    margin-top: 0;
+}
+
+.jogos {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.games {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.games img {
+    width: 40%;
+}
+
+.games p {
+    width: 55%;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .games img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .games p {
+        width: 100%;
+    }
+}

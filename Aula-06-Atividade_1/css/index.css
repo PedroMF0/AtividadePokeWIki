@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url("../img/pokefundo1.jpg");
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bannerInicial {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.texto {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mosaico {
+    text-align: center;
+
+}
+
+.colunas {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.card:hover a {
+    opacity: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
