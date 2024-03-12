@@ -1,0 +1,40 @@
+.imgesq {
+    display: flex;
+    flex-direction: row-reverse; /* Inverte a ordem dos elementos na linha */
+    align-items: center; 
+    margin-bottom: 20px; /* Espaçamento entre as divs */
+}
+
+.imgdir {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imgesq,
+.imgdir {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f2f2f2; 
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; 
+}
+
+.imgesq img,
+.imgdir img {
+    width: 50%;
+    height: auto;
+    flex: 0 0 50%; 
+    margin-right: 20px; 
+}
+
+.imgesq p,
+.imgdir p {
+    flex: 1;
+    text-align: justify;
+    font-family: arial black; 
+    font-size: 16px; 
+    color: #333; 
+
+}

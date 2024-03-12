@@ -1,0 +1,55 @@
+/* Estilo para as fichas dos treinadores */
+.ficha {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ficha h2 {
+    text-align: center;
+    color: #333;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info img {
+    width: 50%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info ul {
+    list-style-type: none;
+}
+
+.biografia {
+    margin-top: 20px;
+}
+
+.biografia h3 {
+    color: #333;
+}
+
+.biografia p {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 800px) {
+    .info {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .info img {
+        margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+    }
+}

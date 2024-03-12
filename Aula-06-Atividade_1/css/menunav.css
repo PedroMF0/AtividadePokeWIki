@@ -1,3 +1,4 @@
+/* Estilos para o menu de navegação */
 #menuNav {
     background-color: #333;
     overflow: hidden;
@@ -46,4 +47,44 @@
 #menuNav ul li:hover > ul {
     display: block;
 }
+
+/* Responsividade: torna o menu em coluna abaixo de 620px */
+@media (max-width: 620px) {
+    #menuNav ul {
+        display: block;
+        width: 100%;
+        position: static; /* Altera a posição para não ser absoluta */
+    }
+    
+    #menuNav ul li {
+        width: 100%;
+        position: relative; /* Define a posição relativa para os itens do menu */
+    }
+    
+    #menuNav ul ul {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        border-radius: 0 0 10px 10px;
+        z-index: 1;
+        top: calc(100% + 5px); /* Define a distância do topo em relação ao pai com uma margem adicional */
+        left: 0; /* Alinha o submenu com o início do item do menu pai */
+    }
+    
+    #menuNav ul ul li {
+        float: none;
+        display: block;
+        width: 100%; /* Garante que os itens do submenu ocupem toda a largura */
+    }
+    
+    #menuNav ul ul li a {
+        padding: 10px 16px;
+    }
+    
+    #menuNav ul li:hover > ul {
+        display: block;
+    }
+}
+
+
 

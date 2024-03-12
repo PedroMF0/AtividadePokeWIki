@@ -7,13 +7,20 @@
 }
 
 .bannerMeio h2 {
+    text-align: center;
     margin-top: 0;
 }
 
 .jogos {
-    background-color: #f2f2f2;
+    background-color: #FF5733; /* Alterando a cor de fundo para um tom de vermelho */
+    color: white; /* Definindo a cor do texto como branco */
     padding: 20px;
     border-radius: 10px;
+    transition: background-color 0.3s; /* Adicionando transição de cor de fundo */
+}
+
+.jogos:hover {
+    background-color: #3366FF; /* Mudando a cor de fundo ao passar o mouse para um tom de azul */
 }
 
 .games {
@@ -23,27 +30,158 @@
     margin-top: 20px;
 }
 
-.games img {
-    width: 40%;
+.game-image img {
+    width: auto; 
+    height: auto;
+    border-radius: 10px;
 }
 
-.games p {
-    width: 55%;
+.game-info {
+    width: 50%; /* Ajustando o tamanho do texto */
     text-align: justify;
 }
 
-@media screen and (max-width: 600px) {
+.game-info h2 {
+    text-align: center;
+    color: white; 
+}
+
+.game-info hr {
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+.jogos2 {
+    background-color: #ffd700; /* Tom de dourado para o fundo */
+    color: black; /* Cor do texto */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; 
+}
+
+.jogos2 h2{
+    text-align: center;
+    color: black;
+}
+
+.jogos2:hover {
+    background-color: #c0c0c0; /* Tom de prateado para o hover */
+}
+
+.jogos3 {
+    background-color: #4682b4; /* Cor de safira para o fundo */
+    color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.jogos3:hover {
+    background-color: #e0115f; /* Cor de rubi para o hover */
+}
+
+.jogos4 {
+    background-color: #001f3f; /* Cor azul marinho para o fundo */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.jogos4:hover {
+    background-color: #6a1b9a; /* Cor de roxo para o hover */
+}
+
+.jogos5 {
+    background-color: black; 
+    color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.jogos5:hover {
+    background-color: #ccc; 
+    color: black; 
+}
+
+.jogos5 h2 {
+    color: inherit; /* Herda a cor do texto do pai (no caso, .jogos5) */
+    transition: color 0.3s; 
+}
+
+.jogos5:hover h2 {
+    color: inherit; /* Herda a cor do texto do pai no hover */
+}
+
+.jogos6 {
+    background-color: red;
+    color: black; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; 
+}
+
+.jogos6:hover {
+    background-color: blue; 
+    color: black; 
+}
+
+.jogos7 {
+    background-color: #ffd700; /* Fundo amarelo para simular o sol */
+    color: black; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.jogos7:hover {
+    background-color: #4682b4; /* Fundo azul para simular a lua no hover */
+    color: black; 
+}
+
+.jogos8 {
+    background-color: #add8e6; /* Fundo azul claro */
+    color: black; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; 
+}
+
+.jogos8:hover {
+    background-color: #ffb6c1; /* Fundo vermelho claro no hover */
+    color: black; 
+}
+
+.jogos9 {
+    background-color: #ff2400; /* Fundo escarlate */
+    color: black; /* Texto preto */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.jogos9:hover {
+    background-color: #8a2be2; /* Fundo violeta no hover */
+    color: black; /* Texto preto no hover */
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
     .games {
         flex-direction: column;
-        align-items: center;
     }
 
-    .games img {
+    .game-image img {
         width: 80%;
         margin-bottom: 20px;
     }
 
-    .games p {
+    .game-info {
         width: 100%;
     }
 }
+
