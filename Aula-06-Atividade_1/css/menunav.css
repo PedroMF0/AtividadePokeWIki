@@ -30,7 +30,7 @@
 #menuNav ul ul {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: green;
     border-radius: 0 0 10px 10px;
     z-index: 1;
 }
@@ -48,7 +48,7 @@
     display: block;
 }
 
-/* Responsividade: torna o menu em coluna abaixo de 620px */
+
 @media (max-width: 620px) {
     #menuNav ul {
         display: block;
@@ -63,12 +63,13 @@
     
     #menuNav ul ul {
         display: none;
-        position: absolute;
-        background-color: #333;
+        position: static; /* Altera a posição para estática */
+        background-color: green;
         border-radius: 0 0 10px 10px;
         z-index: 1;
-        top: calc(100% + 5px); /* Define a distância do topo em relação ao pai com uma margem adicional */
+        top: auto; /* Define a posição do submenu como automática */
         left: 0; /* Alinha o submenu com o início do item do menu pai */
+        margin-top: 5px; /* Adiciona uma margem superior para evitar a sobreposição */
     }
     
     #menuNav ul ul li {
@@ -85,6 +86,8 @@
         display: block;
     }
 }
+
+
 
 
 
